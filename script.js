@@ -1,0 +1,1 @@
+addEventListener('load',()=>setTimeout(()=>{let x=document.getElementById('loader');x.style.opacity=0;setTimeout(()=>x.remove(),800)},500));document.querySelectorAll('a[href^="#"]').forEach(a=>a.onclick=e=>{e.preventDefault();document.querySelector(a.getAttribute('href'))?.scrollIntoView({behavior:'smooth'})});
